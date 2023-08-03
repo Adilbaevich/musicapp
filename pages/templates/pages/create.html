@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+    Create Page
+{% endblock title %}
+
+{% block content %}
+<div class="page1">
+    <form action="" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <p>
+             <input class="create-btn" type="submit" value="Add">
+          </p>
+    </form>
+</div>
+{% endblock %}
